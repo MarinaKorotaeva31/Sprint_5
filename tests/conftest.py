@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from locators import Locators
+from urls import Urls
 
 @pytest.fixture()
 def driver():   # фикстура создания драйвера
@@ -13,8 +14,7 @@ def driver():   # фикстура создания драйвера
 
 @pytest.fixture
 def open_browser(driver):  # фикстура открытия главной страницы
-    url = 'https://stellarburgers.nomoreparties.site/'
-    driver.get(url)
+    driver.get(Urls.url_main)
     WebDriverWait(driver, 3).until(expected_conditions.visibility_of_element_located(Locators.logo_stellar_burger))
 
 @pytest.fixture
