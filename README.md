@@ -11,7 +11,4 @@ test_transfer_to_constructor (переход из ЛК по клику на «К
 test_section_fillings(к разделу "Начинки")
 6. helpers.py содержит вспомогательные функции: registration (функция регистрации), log_in (функция входа в аккаунт), generate_email и generate_password
 генерируют почту (логин) и пароль для регистрации соответственно
-7. locators.py содержит все используемы локаторы# Sprint_3
-# Sprint_5
-# Sprint_5
-# Sprint_5
+7. locators.py содержит все используемы локаторы # Sprint_5
